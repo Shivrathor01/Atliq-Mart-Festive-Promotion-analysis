@@ -1,3 +1,4 @@
+
 # Atliq-Mart-Festive-Promotion-analysis
  This project analyzes the effectiveness of Diwali 2023 and Sankranti 2024 promotional campaigns across 50 AtliQ Mart supermarkets. Utilizing Power BI, SQL & Excel. The analysis provides actionable insights to optimize future promotional strategies.
  # Introduction
@@ -13,5 +14,12 @@
 # Business Requests
 1.# High-Value Products in 'BOGOF' Promotion
 Objective: Identify high-value products featured in the 'BOGOF' (Buy One Get One Free) promotion.
-
+``SELECT
+      DISTINCT product_name, base_price 
+FROM
+    fact_events fe
+JOIN
+    dim_products p ON p.product_code = fe.product_code
+WHERE
+     base_price > 500 AND promo_type = 'BOGOF';``
  
