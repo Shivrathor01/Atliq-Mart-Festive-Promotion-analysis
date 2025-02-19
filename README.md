@@ -14,11 +14,4 @@
 1.# High-Value Products in 'BOGOF' Promotion
 Objective: Identify high-value products featured in the 'BOGOF' (Buy One Get One Free) promotion.
 
-SELECT
-      DISTINCT product_name, base_price 
-FROM
-    fact_events fe
-JOIN
-    dim_products p ON p.product_code = fe.product_code
-WHERE
-     base_price > 500 AND promo_type = 'BOGOF';
+ 
