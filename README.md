@@ -1,4 +1,4 @@
-# _AtliQ-Mart-Festive-Promotion-Analysi_
+# _AtliQ-Mart-Festive-Promotion-Analysis_
 
 This project analyzes the effectiveness of Diwali 2023 and Sankranti 2024 promotional campaigns across 50 AtliQ Mart supermarkets. Utilizing Power BI, SQL &amp; Excel. The analysis provides actionable insights to optimize future promotional strategies.
 
